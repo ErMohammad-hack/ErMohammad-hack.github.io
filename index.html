@@ -1,12 +1,19 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google-like Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="google-container">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" class="google-logo">
+        <input type="text" id="searchQuery" class="search-box" placeholder="Search Google or type a URL" required>
+        <button onclick="performSearch()" class="search-button">Google Search</button>
+        <div id="searchResults"></div>
+    </div>
 
-canvas {
-    border: 1px solid #000;
-}
+    <script src="script.js"></script>
+</body>
+</html>

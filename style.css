@@ -1,7 +1,6 @@
-/* Basic styling to center everything */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,26 +8,17 @@ body {
     margin: 0;
 }
 
-.google-container {
+.search-container {
     text-align: center;
-}
-
-.google-logo {
-    width: 272px;
-    margin-bottom: 20px;
 }
 
 .search-box {
     padding: 10px;
     width: 300px;
     font-size: 16px;
-    border-radius: 20px;
+    border-radius: 5px;
     border: 1px solid #ccc;
     outline: none;
-}
-
-.search-box:focus {
-    border-color: #4285f4;
 }
 
 .search-button {
@@ -37,7 +27,7 @@ body {
     background-color: #4285f4;
     color: white;
     border: none;
-    border-radius: 20px;
+    border-radius: 5px;
     cursor: pointer;
     margin-left: 10px;
 }
@@ -48,17 +38,19 @@ body {
 
 #searchResults {
     margin-top: 20px;
-    font-size: 18px;
-    color: #333;
 }
 
 .search-link {
     display: block;
-    margin: 5px 0;
+    margin: 10px 0;
     color: #4285f4;
     text-decoration: none;
 }
 
 .search-link:hover {
     text-decoration: underline;
+}
+
+#contentDisplay {
+    margin-top: 30px;
 }

@@ -51,3 +51,14 @@ body {
     font-size: 18px;
     color: #333;
 }
+
+.search-link {
+    display: block;
+    margin: 5px 0;
+    color: #4285f4;
+    text-decoration: none;
+}
+
+.search-link:hover {
+    text-decoration: underline;
+}

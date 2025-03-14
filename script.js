@@ -1,11 +1,13 @@
 function performSearch() {
     const query = document.getElementById('searchQuery').value;
+    const searchResultsDiv = document.getElementById('searchResults');
+    
     if (query) {
-        // Simulating search results on the page
+        // Example search results that link to your GitHub pages
         const searchResults = [
-            { title: "Result 1: Example Result 1", url: `https://chatgpt.com/c/${query}` },
-            { title: "Result 2: Another Example", url: `https://chatgpt.com/c/${query}` },
-            { title: "Result 3: More Results", url: `https://chatgpt.com/c/${query}` }
+            { title: `Page for ${query} 1`, url: `/page1.html` }, // Replace with your actual pages
+            { title: `Page for ${query} 2`, url: `/page2.html` },
+            { title: `Page for ${query} 3`, url: `/page3.html` }
         ];
 
         let content = "<h3>Search Results:</h3><ul>";
@@ -14,9 +16,8 @@ function performSearch() {
         });
         content += "</ul>";
 
-        document.getElementById('searchResults').innerHTML = content;
+        searchResultsDiv.innerHTML = content;
     } else {
-        // If no query is entered
-        document.getElementById('searchResults').innerHTML = "<p>Please enter a search term.</p>";
+        searchResultsDiv.innerHTML = "<p>Please enter a search term.</p>";
     }
 }

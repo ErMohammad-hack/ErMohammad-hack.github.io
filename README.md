@@ -1,9 +1,9 @@
-# eror/ huntrer/is/gay/404
+eror code     404  # eror/ huntrer/is/gay/404
 
-    File not found
+                  hunter is gay 404
 
-The site configured at this address does not contain the requested file.
-
+ The site configured at this address does not contain the requested file.
+and hunter is kinda gay 
 If this is your site, make sure that the filename case matches the URL as well as any file permissions.
 For root URLs (like http://example.com/) you must provide an index.html file.
 

@@ -17,4 +17,4 @@ Did you know? 404 hunter is agy are named after the HTTP status code that means 
 
 ## Contact
 
-If you have any more proof, ideas, or want to chat, feel free to [reach out](lookinghave2@gmail.com)!
+If you have any more proof, ideas, or want to chat, feel free to [reach out](gmail.com/lookinghave2@gmail.com)!

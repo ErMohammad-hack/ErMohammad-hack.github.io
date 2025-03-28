@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LBSDQ0MXB0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LBSDQ0MXB0');
+</script>
+<meta name="google-adsense-account" content="ca-pub-3924388554248092">
+<title>Sigmasit - Gaming Escape</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://gr4ys0n.github.io/src/styles.css">
+  <link rel="icon" type="image/x-icon" href="https://Gr4ys0n.github.io/src/images/favicon.jpg">
+<style>
+.gamearea {                   
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+.container {
+            border: 0px solid #00bbff;
+            box-shadow: #00bbff 0px 0 10px;
+            border-radius: 10px;
+            width: 75vw;
+            background-color: #000;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+            height: 75vh; 
+        }
+
+.game-iframe {           
+            border: none;
+            border-radius: 10px 10px 0 0;
+            flex-grow: 1;
+        }
+        .button-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0e0e0e;
+            border-radius: 0 0 10px 10px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .button-bar button {
+            background-color: #000;
+            border: none;
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+            margin: 0 10px;
+            padding: 10px;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .button-bar button:hover {
+            background-color: #00bbff;
+            color: #000;
+        
+</style>
+</head>
+<body>
+
+
+ <ul>
+  <li><a href="index.html">Home</a> </li>
+  <li><a href="games.html">Games</a></li>
+  <li><a href="apps.html">Apps</a></li>
+  <li><a href="search.html">Search</a></li>
+   <a href="about.html"> <img src=/Logo.jpg></a> 
+   <a href="settings.html"> <img style="width: 25px; height: auto; margin-top: 12.5px; margin-left: 17.5px"src=src/images/settings.png></a> 
+  <li style="float:right"><a  href="about.html">About</a></li>
+</ul> 
+
+<!-- Thanks to Voucan-us4 on github for the game iframe and buttons. -->
+
+<div class="gamearea">
+
+<div class="container">
+
+ <iframe id="myIframe" class="game-iframe" allowfullscreen></iframe>
+
+    <div class="button-bar">
+        <button onclick="refreshGame()">&#x21bb;</button>
+        <button onclick="toggleFullscreen()">&#x26F6;</button>
+        <button onclick="openInAboutBlank()"><i class="fa-solid fa-up-right-from-square"></i></button>
+        
+    </div>
+    </div>
+</div>
+  
+<div class="dot"></div> 
+
+<script>
+  
+const iframe = document.getElementById('myIframe');
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const embeddedUrl = urlParams.get('url');
+
+        if (embeddedUrl) {
+            iframe.src = embeddedUrl;
+        }
+  
+function toggleFullscreen() {
+        const iframe = document.getElementById('myIframe');
+        if (!document.fullscreenElement) {
+            iframe.requestFullscreen().catch(err => {
+                alert(`Error attempting to enable fullscreen mode: ${err.message}`);
+            });
+        } else {
+            document.exitFullscreen();
+        }
+    }
+    
+    function refreshGame() {
+        const iframe = document.getElementById('myIframe');
+        iframe.src = iframe.src;
+    }
+    
+    function openInAboutBlank() {
+    const siteTitle = localStorage.getItem('siteTitle') || "Sigmasit - Gaming Escape";
+    const siteLogo = localStorage.getItem('siteLogo') || "https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png";
+
+    const newTab = window.open('about:blank', '_blank');
+
+    if (newTab) {
+        newTab.document.title = siteTitle;
+
+        const favicon = newTab.document.createElement('link');
+        favicon.rel = 'icon';
+        favicon.href = siteLogo;
+        newTab.document.head.appendChild(favicon);
+
+        const iframe = newTab.document.createElement('iframe');
+        iframe.src = document.getElementById('myIframe').src;
+        iframe.style.width = '100vw';
+        iframe.style.height = '100vh';
+        iframe.style.border = 'none';
+
+        newTab.document.body.style.margin = '0';
+        newTab.document.body.appendChild(iframe);
+    } else {
+        console.error("Failed to open About:Blank page.");
+    }
+}
+</script>
+</body>
+</html>

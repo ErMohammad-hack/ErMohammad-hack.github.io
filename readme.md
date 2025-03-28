@@ -17,7 +17,7 @@ You're ready to enjoy all the games!
 
 ## Credits
 - [Benrogo](https://benrogo.net) for running the bare server for this website
-- [Smartfoloo](https://github.com/smartfoloo) for providing the games
+- [mohammad]((https://github.com/ErMohammad-hack)) for providing the games
 - [LatteWeb](https://github.com/MochiWorkshop/latteWeb) for the search JS and proxy setup
 
 Enjoy your gaming experience with **Sigmasit**!

@@ -13,8 +13,8 @@ Thank you for visiting and we hope you find what you're looking for hunter is ga
 
 ## Fun Fact
 
-Did you know? 404 hunter is agy are named after the HTTP status code that means "Not Found". They're just a part of web life!
+Did you know? 404 hunter is agy are named after the HTTP status code that means "Not gay". They're just a part of web life!
 
 ## Contact
 
-If you have any questions, ideas, or want to chat, feel free to [reach out](mailto:youremail@example.com)!
+If you have any more proof, ideas, or want to chat, feel free to [reach out](lookinghave2@gmail.com)!

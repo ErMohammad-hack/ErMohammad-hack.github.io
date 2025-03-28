@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LBSDQ0MXB0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-LBSDQ0MXB0');
+    </script>
+    
+    <meta name="google-adsense-account" content="ca-pub-3924388554248092">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sigmasit Gaming Escape</title>
+    <link rel="stylesheet" href="src/styles.css">
+    <link rel="icon" type="image/x-icon" href="src/images/favicon.jpg">
+    
+    <style>
+        .roundbox {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 1% 20px 20px 20px;
+            color: white;
+            border-radius: 25px;
+            backdrop-filter: blur(20px) brightness(110%);
+            background-color: rgba(255, 255, 255, 0.075);
+            width: 80vw;
+            box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
+        }
+        
+        .settingbox {
+            padding: 0px 10px;
+            padding-top: 30px;
+            margin: 15px;
+            color: white;
+            backdrop-filter: blur(20px) brightness(110%);
+            background-color: rgba(255, 255, 255, 0.075);
+            box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
+            width: 425px;
+            height: 275px;
+            overflow: hidden;
+            transition: transform 0.15s;
+            border-radius: 10px;
+        }
+        
+        .settingbox strong {
+            font-size: 30px;
+            text-align: center;
+        }
+        
+        .settingbox p {
+            font-size: 25px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .settingbox button {
+            padding: 10px 20px;
+            transition: transform 0.15s;
+            background: transparent;
+            border: 2px solid white;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        
+        .settingbox button:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="apps.html">Apps</a></li>
+        <li><a href="search.html">Search</a></li>
+        <a href="about.html"><img src="src/images/Logo.jpg" alt="Logo"></a> 
+        <a href="settings.html"><img style="width: 25px; height: auto; margin-top: 12.5px; margin-left: 17.5px" src="src/images/settings.png" alt="Settings"></a>
+        <li style="float:right"><a href="about.html">About</a></li>
+    </ul>
+
+    <div id="particles-js"></div>
+    <script type="text/javascript" src="src/js/particles.js"></script>
+    <script type="text/javascript" src="src/js/app.js"></script>
+
+    <div style="padding-top: 50px;">
+        <center>
+            <div class="roundbox">
+                <div class="settingbox">
+                    <strong>About:Blank Cloaking</strong>
+                    <p>Disguises website in an about:blank page.</p>
+                    <button onclick="openInAboutBlank()">
+                        <strong style="font-size: 25px; color: white; font-family: Nunito, sans-serif;">Open Blanker</strong>
+                    </button>
+                </div>
+            </div>
+        </center>
+    </div>
+
+    <div class="dot"></div>
+
+    <script>
+        function openInAboutBlank() {
+            // Open a new window (about:blank by default)
+            var win = window.open();
+            
+            // Ensure the window was successfully opened
+            if (!win) {
+                alert("Popup was blocked. Please allow popups for this site.");
+                return;
+            }
+
+            // Set the URL and create an iframe to load it
+            var url = "/index.html";
+            var iframe = win.document.createElement('iframe');
+            iframe.style.width = "100%";
+            iframe.style.height = "100%";
+            iframe.style.border = "none";
+            iframe.src = url;
+            
+            // Add styles to remove margin from the body of the new window
+            var style = win.document.createElement('style');
+            style.innerHTML = 'body { margin: 0; padding: 0; }';  // Remove margin and padding
+            win.document.head.appendChild(style);
+
+            // Append iframe to the new window's document body
+            win.document.body.appendChild(iframe);
+
+            // Focus the new window (if needed)
+            win.focus();
+        }
+    </script>
+</body>
+</html>

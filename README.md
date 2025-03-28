@@ -1,4 +1,4 @@
-eror code     404  # eror/ huntrer/is/gay/404
+            eror code     404  # eror/ huntrer/is/gay/404
 
                   hunter is gay 404
 

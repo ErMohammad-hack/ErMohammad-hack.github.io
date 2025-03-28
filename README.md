@@ -1,13 +1,21 @@
-            eror code     404  # eror/ huntrer/is/gay/404
+# 404 - Oops,hunter is gay!
 
-                  hunter is gay 404
+Looks like you've found a hunter us gay that doesn't exist — the dreaded 404 error!
 
- The site configured at this address does not contain the requested file.
-and hunter is kinda gay 
-If this is your site, make sure that the filename case matches the URL as well as any file permissions.
-For root URLs (like http://example.com/) you must provide an index.html file.
+This is just a reminder that something went wrong. Maybe the file was moved or the link is broken.
 
-Read the full documentation for more information about using GitHub Pages.
+## What to Do Next?
 
-dont belive me here the proof https://www.youtube.com 
-    
+- Double-check the URL for any typos.
+- Head back to the [homepage](https://github.com/your-username/sigmasit-game) for more awesome content!
+- If you're still having trouble, feel free to open an issue, and we'll get it sorted.
+
+Thank you for visiting and we hope you find what you're looking for soon!
+
+## Fun Fact
+
+Did you know? 404 errors are named after the HTTP status code that means "Not Found". They're just a part of web life!
+
+## Contact
+
+If you have any questions, ideas, or want to chat, feel free to [reach out](mailto:youremail@example.com)!

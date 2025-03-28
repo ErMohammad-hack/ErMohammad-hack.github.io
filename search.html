@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LBSDQ0MXB0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-LBSDQ0MXB0');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-adsense-account" content="ca-pub-3924388554248092">
+    <title>Home - Sigmasit</title>
+    <link rel="icon" type="image/x-icon" href="https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png">
+    <script src="src/js/fs.js"></script>
+    <script src="src/js/refresh-page.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@500&family=Nunito:ital@0;1&display=swap');
+
+        html {
+            background-color: #000000;
+            text-align: center;
+            justify-content: center;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 0;
+            justify-content: center;
+        }
+
+        h1, h2, h3 {
+            font-family: "Nunito";
+            color: white;
+            margin-bottom: 20px;
+            margin-top: 160px;
+        }
+
+        h4, h5, p, a {
+            font-family: 'Lexend', sans-serif;
+            color: white;
+        }
+
+        #proxyFrame {
+            margin-top: 70px;
+            border: none;
+            text-align: center;
+            justify-content: center;
+        }
+
+        #uv-address {
+            background-color: transparent;
+            border: 1.5px #ffffff solid;
+            border-radius: 12px;
+            padding: 12px;
+            text-align: center;
+            color: black;
+            font-family: "Prompt";
+            background-color: white;
+            outline: none;
+            transition: hover .2s;
+            width: 500px;
+            padding-left: 40px;
+        }
+
+        .bookmarks {
+            background-color: transparent;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            margin: 5px;
+            justify-content: space-between;
+        }
+
+        .bookmarks img {
+            border-radius: 50px;
+            width: 50px;
+            height: 50px;
+        }
+
+        .bookmarks img:hover {
+            transition: .3s;
+            transform: scale(1.1);
+        }
+
+        .bookmarks p:hover {
+            transform: scale(1.1);
+            transition: .3s;
+        }
+
+        .svg {
+            filter: invert(1);
+            width: 30px;
+            height: 30px;
+            color: white;
+        }
+
+        .svg:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+            transition: .3s;
+            filter: invert(.4);
+        }
+
+        .dot {
+            box-shadow: 0 0 150px 100px #00bbff;
+            border-radius: 50%;
+            height: 320px;
+            width: 320px;
+            background-image: radial-gradient(
+                farthest-corner at 50% 50%,
+                #ffffff, #009dff
+            );
+            background-blend-mode: multiply;
+            filter: blur(50px) contrast(1.1);
+            position: fixed;
+            transform: translate(-50%, -50%);
+            left: 50vw;
+            top: 100vh;
+            position: absolute;
+            z-index: -100;
+        }
+
+        a {
+            color: white;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        ul {
+            z-index: 1000;
+            position: fixed;
+            backdrop-filter: blur(20px) brightness(100%);
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'Lexend', sans-serif;
+            color: white;
+            text-shadow: #000000 1px 0 10px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #00bbff;
+        }
+
+        .active {
+            background-color: #00bbff;
+        }
+
+        ul {
+            display: block;
+        }
+
+        ul img {
+            height: 35px;
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-top: 5px;
+            margin-down: 5px;
+            float: right;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            color: white;
+            text-align: left;
+            z-index: -1000;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="apps.html">Apps</a></li>
+        <li><a class="active" href="search.html">Search</a></li>
+        <a href="about.html"><img src="/Logo.jpg" alt="Sigmasit Logo"></a>
+        <a href="settings.html"><img style="width: 25px; height: auto; margin-top: 12.5px; margin-left: 17.5px" src="src/images/settings.png" alt="Settings"></a>
+        <li style="float:right"><a href="about.html">About</a></li>
+    </ul>
+
+    <iframe id="proxyFrame" src="/static/index.html" style="width: 80vw; height: 80vh;"></iframe>
+    <br>
+    <br>
+
+    <img class="svg" src="/src/images/left.svg" onclick="history.back()">
+    <img class="svg" src="/src/images/reload.svg" onclick="refreshFrame()">
+    <img class="svg" src="/src/images/right.svg" onclick="history.forward()">
+    <img class="svg" src="/src/images/fullscreen.svg" onclick="toggleFullscreen()">
+
+    <div class="footer">
+        <p style="margin: 10px;">Credits to <a href="https://github.com/molkify/latte"><u>Latteweb</u></a> and <a href="https://docs.titaniumnetwork.org/proxies/ultraviolet/"><u>Ultraviolet</u></a></p>
+    </div>
+</body>
+</html>

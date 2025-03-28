@@ -1,13 +1,12 @@
 # 404 - Oops,hunter is gay!
 
-Looks like you've found a hunter us gay that doesn't exist — the dreaded 404 error!
+Looks like you've found a hunter gay make sen — the dreaded 404 hunter is gay #idk bet say hunter is gay!
 
-This is just a reminder that something went wrong. Maybe the file was moved or the link is broken.
+This is just a reminder that something went wrong. Maybe hunter is gay 404 eror  is broken.
 
-## What to Do Next?
 
 - Double-check the URL for any typos.
-- Head back to the [homepage](https://github.com/your-username/sigmasit-game) for more awesome content!
+- Head back to the [homepage]() for more awesome content!
 - If you're still having trouble, feel free to open an issue, and we'll get it sorted.
 
 Thank you for visiting and we hope you find what you're looking for soon!
